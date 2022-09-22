@@ -8,7 +8,7 @@ IMAP_SERVER = 'imap.mail.us-east-1.awsapps.com'  # AWS IMAP server address
 
 
 class IMAPClientAPi:
-    user = 'auto.create.case@kennekt.awsapps.com'
+    user = 'muhtor@yusufjanov.awsapps.com'
     password = 'pwd'
 
     def imap_client(self):
