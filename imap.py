@@ -7,13 +7,9 @@ port = 993
 IMAP_SERVER = 'imap.mail.us-east-1.awsapps.com'  # AWS IMAP server address
 
 
-IMAP_EMAIL_HOST_USER = 'auto.create.case@kennekt.awsapps.com'
-IMAP_EMAIL_PASSWORD = '1da.<,#2As2Dw/).'
-
-
 class IMAPClientAPi:
     user = 'auto.create.case@kennekt.awsapps.com'
-    password = '1da.<,#2As2Dw/).'
+    password = 'pwd'
 
     def imap_client(self):
         try:
@@ -55,7 +51,7 @@ class IMAPClientAPi:
 
 class MailBoxAPi:
     user = 'muhtor@yusufjanov.awsapps.com'
-    password = 'dKja42342!hk'
+    password = 'pwd'
 
     def imap_client(self):
         with MailBox(host=IMAP_SERVER).login(self.user, self.password, 'INBOX') as mailbox:
